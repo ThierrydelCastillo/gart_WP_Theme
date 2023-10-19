@@ -16,5 +16,18 @@ function montheme_register_assets()
     wp_enqueue_script('bootstrap');
 }
 
+function montheme_title_separator()
+{
+    return '|';
+}
+
+function montheme_document_title_parts($title)
+{
+    $title['demo'] = 'Salut';
+    return $title;
+}
+
 add_action('after_setup_theme', 'montheme_supports');
 add_action('wp_enqueue_scripts', 'montheme_register_assets');
+add_action('document_title_separator', 'montheme_title_separator');
+add_action('document_title_parts', 'montheme_document_title_parts');

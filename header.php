@@ -16,11 +16,11 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <?php
-                wp_nav_menu([
-                    'theme_location' => 'header',
-                    'container' => false,
-                    'menu_class' => 'navbar-nav mr-auto',
-                ]);
+            wp_nav_menu([
+                'theme_location' => 'header',
+                'container' => false,
+                'menu_class' => 'navbar-nav mr-auto',
+            ]);
             ?>
             <!--
             <ul class="navbar-nav mr-auto">
@@ -46,10 +46,8 @@
                 </li>
             </ul>
             -->
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
+        <?php get_search_form() ?>
     </nav>
+
     <div class="container">

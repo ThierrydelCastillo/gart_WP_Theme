@@ -7,6 +7,9 @@ function montheme_supports()
     add_theme_support('menus');
     register_nav_menu('header', 'En tête du menu');
     register_nav_menu('footer', 'Pied de page');
+    add_image_size('post-thumbnail', 350, 215, true);
+    remove_image_size('medium');
+    add_image_size('medium', 500, 500);
 }
 
 function montheme_register_assets()

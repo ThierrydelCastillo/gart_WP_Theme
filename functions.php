@@ -74,3 +74,6 @@ add_action('document_title_separator', 'montheme_title_separator');
 add_action('document_title_parts', 'montheme_document_title_parts');
 add_filter('nav_menu_css_class', 'montheme_menu_class');
 add_filter('nav_menu_link_attributes', 'montheme_menu_link_class');
+
+require_once('metaboxes/Sponso.php');
+SponsoMetaBox::register();

@@ -107,4 +107,7 @@ add_filter('nav_menu_css_class', 'montheme_menu_class');
 add_filter('nav_menu_link_attributes', 'montheme_menu_link_class');
 
 require_once('metaboxes/Sponso.php');
+require_once('options/agence.php');
+
 SponsoMetaBox::register();
+AgenceMenuPage::register();

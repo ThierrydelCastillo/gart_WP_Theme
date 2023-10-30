@@ -87,6 +87,16 @@ function montheme_init()
         'hierarchical' => true,
         'show_admin_column' => true,
     ]);
+    register_post_type('bien', [
+        'label' => "Biens",
+        'public' => true,
+        'menu_position' => 3,
+        'menu_icon' => 'dashicons-building',
+        'supports' => ['title', 'editor', 'thumbnail'],
+        'show_in_rest' => true,
+        'has_archive' => true,
+
+    ]);
 }
 
 add_action('init', 'montheme_init');

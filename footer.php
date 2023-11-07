@@ -6,6 +6,7 @@
         'container' => false,
         'menu_class' => 'navbar-nav mr-auto',
     ]);
+    the_widget(YoutubeWidget::class, ['youtube' => 'CLeZyIID9Bo'], ['after_widget' => '', 'before_widget' => '']);
     ?>
 </footer>
 <div>
